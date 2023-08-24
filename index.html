@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Graduation Prediction</title>
+</head>
+<body>
+    <h1>Student Graduation Prediction</h1>
+    <form method="post" action="/">
+        <label for="Name">Name:</label>
+        <input type="text" name="Name"><br>
+        <label for="Sem1">Sem 1:</label>
+        <input type="number" name="Sem1"><br>
+        <label for="Sem2">Sem 2:</label>
+        <input type="number" name="Sem2"><br>
+        <label for="Sem3">Sem 3:</label>
+        <input type="number" name="Sem3"><br>
+        <label for="Sem4">Sem 4:</label>
+        <input type="number" name="Sem4"><br>
+        <label for="Sem5">Sem 5:</label>
+        <input type="number" name="Sem5"><br>
+        <label for="Sem6">Sem 6:</label>
+        <input type="number" name="Sem6"><br>
+        <label for="Sem7">Sem 7:</label>
+        <input type="number" name="Sem7"><br>
+        <label for="Sem8">Sem 8:</label>
+        <input type="number" name="Sem8"><br>
+        <!-- Repeat similar lines for Sem2 to Sem8 -->
+        <button type="submit">Predict Graduation</button>
+    </form>
+    {% if prediction %}
+    <p>Predicted Outcome: {{ prediction }}</p>
+    {% endif %}
+</body>
+</html>
